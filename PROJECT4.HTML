@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InternConnect Form</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>InternConnect - Internship Application Form</h1>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone"
+                   pattern="[0-9]{10}" required
+                   placeholder="10-digit number">
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education Details</legend>
+
+            <label for="college">College Name</label>
+            <input type="text" id="college" name="college" required>
+
+            <label for="branch">Branch</label>
+            <input type="text" id="branch" name="branch" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Internship Preferences</legend>
+
+            <label>Mode of Internship</label>
+
+            <input type="radio" id="online" name="mode" value="Online" required>
+            <label for="online">Online</label>
+
+            <input type="radio" id="offline" name="mode" value="Offline">
+            <label for="offline">Offline</label>
+
+            <br><br>
+
+            <label for="skill">Preferred Skill</label>
+            <input list="skills" id="skill" name="skill">
+
+            <datalist id="skills">
+                <option value="Web Development">
+                <option value="Python">
+                <option value="AI/ML">
+                <option value="UI/UX Design">
+                <option value="Data Science">
+            </datalist>
+
+            <label for="experience">
+                Experience Level
+            </label>
+            <input type="range" id="experience"
+                   min="0" max="10">
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</
