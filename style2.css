@@ -1,0 +1,29 @@
+body {
+font font-family:Arial,sans-serif ;
+background-colour:#f2f2f2
+}
+h1{
+    color:navy;
+    text-align:center;
+}
+.card{
+    background-colour:black;
+    border:2px solid rgb(181, 117, 117);
+    padding:15px;
+    margin:20px;
+    width:260px;
+}
+.card img{
+    width:250px;
+    height:150px;
+}
+.title{
+    color: darkblue;
+    font-size:22px;
+    font-weight:bold;
+}
+.price{
+    color:green;
+    font-size:20px;
+    font-weight:bold;
+}
