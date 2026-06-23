@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:rgba(175, 167, 175, 0.267);
+    text-align:center;
+    padding:40px;
+}
+
+h1{
+    margin-bottom:40px;
+    color:#333;
+}
+
+/* Flex Container */
+.pricing-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+/* Cards */
+.card{
+    width:260px;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+}
+
+.card h2{
+    color:#00a2ff;
+    margin-bottom:15px;
+}
+
+.card h1{
+    color:#333;
+    margin-bottom:20px;
+}
+
+.card p{
+    margin:12px 0;
+    color:#555;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#00a2ff;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#0088dd;
+}
+
+/* Highlight Pro Card */
+.featured{
+    transform:scale(1.08);
+    border:3px solid #00a2ff;
+}
+
+.featured:hover{
+    transform:scale(1.12);
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+    .pricing-container{
+        flex-direction:column;
+    }
+
+    .card{
+        width:90%;
+    }
+
+    .featured{
+        transform:scale(1);
+    }
+}
